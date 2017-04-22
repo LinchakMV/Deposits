@@ -1,1 +1,3 @@
-# Deposits
+##download
+##npm install
+##gulp watch
