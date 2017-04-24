@@ -2,6 +2,7 @@ $yellow-color: #f18b00;
 $blue-color: #3372b1;
 $border-color: #d4d4d4;
 $hover-color: #f6f6f6;
+
 body{	
 	font-family: 'Lato', sans-serif;
 }
@@ -30,13 +31,10 @@ body{
 		font-size: 14px;	
 	}
 }
-.h-item3{
-	margin-left: 15px;
+.h-item{
+	margin-left: 14px;
 }
-.h-item4{
-	margin-left: 13px;
-}
-.active-menu{
+.is-active{
 	background-color: #d8d8d8;
 	border-radius: 4px;
 }
@@ -72,12 +70,12 @@ body{
         }
     }
 }
-.header__language{
+.language{
 	list-style:none;
 	text-decoration:none;
 	padding:0;
 }
-.header__language-item{
+.language-item{
 	display: inline;
 	border-radius: 4px;
 	margin:0px 5px;
@@ -138,21 +136,21 @@ body{
 }
 .info-deposit{
 	margin: 40px 0 0 75px;
-	&__bank{
+	h5{
 		font-size: 16px;
 		line-height: 2.5;
 		font-weight:300;
 		letter-spacing: 0.03em;
 		margin-bottom:0;
 	}
-	&__h1{
+	h1{
 		margin-top: 0;
   		font-size: 48px;  
   		line-height: 0.9;
 		font-weight: 500;
 		letter-spacing: 0.047em;
 	}
-	&__p{
+	p{
 		font-size: 20px;
   		line-height: 1.6;
 		margin:57px 0 0 2px;
@@ -160,24 +158,29 @@ body{
 		letter-spacing: 0.035em;
 		font-weight: 100;
 	}
+	h2{
+		margin:45px 0 0 2px;
+		font-weight: 700;
+	}
+	ul{
+		margin: 5px 0 0 0px;
+		li{
+			list-style-type: none;
+			padding: 10px 0;
+			font-size: 18px;
+			letter-spacing: 0.025em;
+			line-height:30px;
+		}
+		li:before{
+			color: $yellow-color;
+			font-size:20px;
+			content: "•";
+			padding-right:17px;
+		}
+	}
 }
-.info-deposit__h2{
-	margin:45px 0 0 2px;
-	font-weight: 700;
-}
-.info-deposit__list{
-	margin: 5px 0 0 15px;
-}
-.info-deposit__item{
-	color: $yellow-color;
-	padding: 10px 0;
-	font-size: 25px;
-}
-.info-deposit__item span{
-	color: #000;
-	font-size: 18px;
-	letter-spacing: 0.025em;
-}
+
+
 // /CONTENT-DEPOSIT
 
 // DEPOSIT-VARIANTS
@@ -189,30 +192,31 @@ body{
 	margin-left:10px;
 	&__block{
 		max-width:389px;
-		h3{
+		.block_h3{
 			color: $blue-color;
 			font-size: 25px;
 			margin-bottom: 0px;
 		}
-		p{
+		.block_p{
 			margin-top:10px;
 			line-height: 1.65;
 			letter-spacing: 0.032em;
 			font-weight: 300;
 			height:100px;
-		}
-		button{
-			background: $yellow-color;
-			border: none;
-			color: #fff;
-			width: 148px;
-			height: 44px;
-			border-radius: 4px;
-			font-size: 16px;
-			letter-spacing: 0.03em;
-		}
+		}		
 	}
 }
+.button-order{
+	background: $yellow-color;
+	border: none;
+	color: #fff;
+	width: 148px;
+	height: 44px;
+	border-radius: 4px;
+	font-size: 16px;
+	letter-spacing: 0.03em;
+}
+
 .fa{
 	padding-left:10px;	
 }
@@ -269,18 +273,27 @@ body{
   }
   a{
 	  color: $blue-color;
-  }
+	  text-decoration: none;
+  }  
   h4{
 	  font-size: 20px;
 	  margin-bottom:0px;
   }
 }
+.link-more span{
+	color: $yellow-color;
+}
 .accordion-link{
-	margin:0;
+	margin-top:5px;
+	padding:0;
+	list-style-type: none;
 	a{
 		font-size: 17px;
+		line-height: 30px;
+		
 	}
 }
+
 .accordion__toggle:checked + .accordion__target{
   position: static;
   overflow: visible;

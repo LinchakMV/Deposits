@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'Lato', sans-serif; }
 
@@ -28,13 +29,10 @@ body {
     text-transform: uppercase;
     font-size: 14px; }
 
-.h-item3 {
-  margin-left: 15px; }
+.h-item {
+  margin-left: 14px; }
 
-.h-item4 {
-  margin-left: 13px; }
-
-.active-menu {
+.is-active {
   background-color: #d8d8d8;
   border-radius: 4px; }
 
@@ -73,16 +71,16 @@ body {
       letter-spacing: 0.15em;
       font-stretch: ultra-expanded; }
 
-.header__language {
+.language {
   list-style: none;
   text-decoration: none;
   padding: 0; }
 
-.header__language-item {
+.language-item {
   display: inline;
   border-radius: 4px;
   margin: 0px 5px; }
-  .header__language-item a {
+  .language-item a {
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
@@ -136,42 +134,41 @@ body {
 
 .info-deposit {
   margin: 40px 0 0 75px; }
-  .info-deposit__bank {
+  .info-deposit h5 {
     font-size: 16px;
     line-height: 2.5;
     font-weight: 300;
     letter-spacing: 0.03em;
     margin-bottom: 0; }
-  .info-deposit__h1 {
+  .info-deposit h1 {
     margin-top: 0;
     font-size: 48px;
     line-height: 0.9;
     font-weight: 500;
     letter-spacing: 0.047em; }
-  .info-deposit__p {
+  .info-deposit p {
     font-size: 20px;
     line-height: 1.6;
     margin: 57px 0 0 2px;
     padding-right: 0px;
     letter-spacing: 0.035em;
     font-weight: 100; }
-
-.info-deposit__h2 {
-  margin: 45px 0 0 2px;
-  font-weight: 700; }
-
-.info-deposit__list {
-  margin: 5px 0 0 15px; }
-
-.info-deposit__item {
-  color: #f18b00;
-  padding: 10px 0;
-  font-size: 25px; }
-
-.info-deposit__item span {
-  color: #000;
-  font-size: 18px;
-  letter-spacing: 0.025em; }
+  .info-deposit h2 {
+    margin: 45px 0 0 2px;
+    font-weight: 700; }
+  .info-deposit ul {
+    margin: 5px 0 0 0px; }
+    .info-deposit ul li {
+      list-style-type: none;
+      padding: 10px 0;
+      font-size: 18px;
+      letter-spacing: 0.025em;
+      line-height: 30px; }
+    .info-deposit ul li:before {
+      color: #f18b00;
+      font-size: 20px;
+      content: "•";
+      padding-right: 17px; }
 
 .deposit-variants {
   display: -ms-flexbox;
@@ -185,25 +182,26 @@ body {
   margin-left: 10px; }
   .deposit-variants__block {
     max-width: 389px; }
-    .deposit-variants__block h3 {
+    .deposit-variants__block .block_h3 {
       color: #3372b1;
       font-size: 25px;
       margin-bottom: 0px; }
-    .deposit-variants__block p {
+    .deposit-variants__block .block_p {
       margin-top: 10px;
       line-height: 1.65;
       letter-spacing: 0.032em;
       font-weight: 300;
       height: 100px; }
-    .deposit-variants__block button {
-      background: #f18b00;
-      border: none;
-      color: #fff;
-      width: 148px;
-      height: 44px;
-      border-radius: 4px;
-      font-size: 16px;
-      letter-spacing: 0.03em; }
+
+.button-order {
+  background: #f18b00;
+  border: none;
+  color: #fff;
+  width: 148px;
+  height: 44px;
+  border-radius: 4px;
+  font-size: 16px;
+  letter-spacing: 0.03em; }
 
 .fa {
   padding-left: 10px; }
@@ -253,15 +251,22 @@ body {
     line-height: 1.667;
     font-size: 22px; }
   .accordion__target a {
-    color: #3372b1; }
+    color: #3372b1;
+    text-decoration: none; }
   .accordion__target h4 {
     font-size: 20px;
     margin-bottom: 0px; }
 
+.link-more span {
+  color: #f18b00; }
+
 .accordion-link {
-  margin: 0; }
+  margin-top: 5px;
+  padding: 0;
+  list-style-type: none; }
   .accordion-link a {
-    font-size: 17px; }
+    font-size: 17px;
+    line-height: 30px; }
 
 .accordion__toggle:checked + .accordion__target {
   position: static;
